@@ -32,7 +32,7 @@ pnpm install
 dsh plugin --profile web add <包名>
 ```
 
-> 发布到 npm 前建议改名为 scoped 包（如 `@dsh-market/mcps-settings`），避免与 npm 上已有包冲突；改名的同时更新 `cordis.patch.yml` 中对应插件行的 `name`。
+> 发布到 npm 前建议改名为 scoped 包（如 `@yhrhong/mcps-settings`），避免与 npm 上已有包冲突；改名的同时更新 `cordis.patch.yml` 中对应插件行的 `name`。
 
 ## 使用
 

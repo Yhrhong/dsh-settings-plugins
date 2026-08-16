@@ -24,10 +24,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dsh-market/dsh-settings-plugins.git"
+    "url": "git+https://github.com/Yhrhong/dsh-settings-plugins.git"
   },
-  "homepage": "https://github.com/dsh-market/dsh-settings-plugins",
-  "author": "dsh-market contributors",
+  "homepage": "https://github.com/Yhrhong/dsh-settings-plugins",
+  "author": "Yhrhong",
   "dsh": {
     "client": {
       "inject": [
