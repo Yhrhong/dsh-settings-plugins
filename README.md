@@ -1,14 +1,13 @@
 # dsh-settings-plugins
 
-DeepSeek Harness（DSH）Web 预设的设置页插件集：在 GUI 的「设置」里为 **MCP 服务器** 和 **技能** 提供可视化管理页面，外加一个会话删除增强。
+DeepSeek Harness（DSH）Web 预设的设置页插件集：在 GUI 的「设置」里为 **MCP 服务器** 和 **技能** 提供可视化管理页面。
 
-本仓库包含三个独立的 Cordis 插件（均为 MIT 许可，可单独发布/安装）：
+本仓库包含两个独立的 Cordis 插件（均为 MIT 许可，可单独发布/安装）：
 
 | 插件 | 包名 | 功能 |
 | --- | --- | --- |
 | MCP 管理 | `mcps-settings` | 在设置页列出已配置/已连接的 MCP 服务器卡片，支持添加、移除、启停、在线工具数展示，直接读写 profile 的 `cordis.patch.yml` |
 | 技能管理 | `skills-settings` | 在设置页列出完整技能目录卡片（来源/预设/调用方式/启用状态），支持启停、新建、移除技能，读写 `skills-settings.json` 与 `~/.dsh/skills/` |
-| 会话删除 | `session-delete` | 会话头部常驻删除按钮（归档语义：列表隐藏、日志保留在磁盘），附带斜杠命令的中文描述 |
 
 ## 安装
 
@@ -56,8 +55,7 @@ dsh plugin --profile web add <包名>
 ```
 dsh-settings-plugins/
 ├── mcps-settings/       # 宿主端 lib/index.js + 客户端 lib/client.js
-├── skills-settings/
-└── session-delete/
+└── skills-settings/
 ```
 
 每个插件是标准的 DSH 双面（dual-face）Cordis 插件：
