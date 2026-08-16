@@ -1,0 +1,42 @@
+{
+  "name": "session-delete",
+  "version": "0.1.0",
+  "description": "Persistent per-session delete button in the conversation header (archive semantics: hidden from all lists, log kept on disk) plus Chinese descriptions for slash commands.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "deepseek",
+    "harness",
+    "dsh",
+    "dsh-plugin",
+    "sessions",
+    "delete"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsh-market/dsh-settings-plugins.git"
+  },
+  "homepage": "https://github.com/dsh-market/dsh-settings-plugins",
+  "author": "dsh-market contributors",
+  "dsh": {
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-connection",
+        "@deepseek-ai/dsh-client-runtime"
+      ],
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "license": "MIT"
+}
